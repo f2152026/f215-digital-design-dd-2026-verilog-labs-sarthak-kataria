@@ -22,7 +22,7 @@ module alu (
   reg [3:0] b_inv;
   reg [3:0] b_twos;
 
-  always @(a, b) begin
+  always @(*) begin
     case (op)
       1'b0: begin
         result = a + b;                 // add
